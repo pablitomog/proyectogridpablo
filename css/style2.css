@@ -1,0 +1,97 @@
+.contenedor{
+    text-align: center;
+    background-color: aqua;
+    padding: 10px;
+    font-size: 25px;
+    display: grid;
+    grid-gap: 20px;
+    grid-gap: 1opx;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr 7fr 1fr;
+    grid-template-areas: "cabecera  cabecera  cabecera"
+                         "menu      menu      menu"
+                         "contenido contenido publicidad "
+                         "pie       pie       pie"
+                            ;
+    
+                        
+                        
+    
+    
+}
+.contenedor>div{
+    background-color: chartreuse;
+}
+.contenedor .cabecera{
+    background-color: yellow;
+    grid-column: cabecera;
+}
+
+.contenedor .menu{
+    background-color: coral;
+    grid-column: menu;
+}
+.contenedor .contenido{
+    background-color: beige;
+    grid-column: contenido;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 2fr 2fr;
+    
+    
+    
+}
+.contenedor .contenido .contenidoini{
+    text-align: center;
+    background-color: beige;
+    padding: 10px;
+    font-size: 25px;
+    display: grid;
+    grid-gap: 20px;
+    grid-gap: 1opx;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 2fr 1fr;
+    grid-template-areas: "hola1 hola2"
+                            ;
+
+}
+.contenedor .contenido .hola1{
+    background-color: wheat;
+    grid-column: hola1;
+}
+.contenedor .contenido .hola2{
+    background-color: wheat;
+    grid-column: hola2;
+}
+
+.contenedor .publicidad{
+    background-color: antiquewhite;
+    grid-column: publicidad;
+}
+.contenedor .pie{
+    background-color: brown;
+    grid-column: pie;
+}
+
+.contenedor .contenido .publicidadini{
+    text-align: center;
+    background-color: beige;
+    padding: 10px;
+    font-size: 25px;
+    display: grid;
+    grid-gap: 20px;
+    grid-gap: 1opx;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 2fr 1fr;
+    
+    grid-template-areas: "hola3"
+                         "hola4"
+                            ;
+}
+.contenedor .publicidad .hola3{
+    background-color: rgb(202, 149, 52);
+    grid-column: hola3;
+}
+.contenedor .publicidad .hola4{
+    background-color: rgb(238, 160, 16);
+    grid-column: hola4;
+}
